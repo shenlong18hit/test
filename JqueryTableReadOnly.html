@@ -1,0 +1,318 @@
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<div>
+<style>
+#table104radio .headerTable
+{
+background-color:rgba(51, 204, 204, 1);
+color:White;
+}
+#table104radio td
+{
+border:2px solid White;
+padding: 3px 3px 3px 3px;
+}
+#table104radio tr:not(.headerTable):nth-child(odd) td
+{
+background-color:rgba(245, 245, 245, 1);
+}
+#table104radio tr:not(.headerTable):nth-child(even) td
+{
+background-color:white;
+}
+#table104radio .checkbox,.radio
+{
+margin-top:0px;
+margin-bottom:0px;
+}
+#table104radio input[readonly='readonly']{
+width: 240px;
+background: #FFFF99;
+}
+#table104radio input[readonly='']{
+width: 240px;
+background: #FFFF99;
+}
+#table104radio input[readonly!='readonly']{
+width: 240px;
+background: #FFFF99;
+}
+#table104radio
+{
+margin:auto;   
+}
+#table104radio tr td:nth-child(2) input[type='text']{
+width: 75px;
+}
+#table104radio tr td:nth-child(5) input[type='text']{
+width: 240px;
+}
+#table104radio tr:nth-child(1) td:nth-child(1){
+width: 150px;
+}
+#table104radio tr:nth-child(1) td:nth-child(2){
+width: 100px;
+}
+#table104radio tr:nth-child(1) td:nth-child(4){
+width: 275px;
+}
+#table104radio tr:nth-child(2) td{
+width: 75px;
+}
+</style>
+			<script>
+				$(document).ready(function () {
+					$("#table104radio tr:not(.headerTable) td:nth-child(4) input[type='radio']").click(function () {
+						$(this).parent().parent().find("td:nth-child(5) input[readonly='readonly']").removeAttr("readonly");
+						$(this).parent().parent().find("td:nth-child(5) input[readonly='']").removeAttr("readonly");
+					});
+					$("#table104radio tr:not(.headerTable) td:nth-child(3) input[type='radio']").click(function () {
+						$(this).parent().parent().find("td:nth-child(5) input[type='text']").prop("readonly", "readonly");
+					});
+				})
+			</script>
+					<table class="borderTable" id="table104radio" cellspacing="0" cellpadding="0">
+						<tbody><tr class="headerTable">
+							<td align="center" class="borderTable" rowspan="2">
+								ÀπË«¬ß“π∑’Ë‡°’Ë¬«¢ÈÕß
+							</td>
+							<td align="center" class="borderTable" rowspan="2">
+								«—π∑’Ë
+							</td>
+							<td align="center" class="borderTable" colspan="2">
+								ºŸÈæ‘®“√≥“
+							</td>
+							<td align="center" class="borderTable" rowspan="2">
+								À¡“¬‡Àµÿ
+							</td>
+						</tr>
+						<tr class="headerTable">
+							<td align="center" class="borderTable">
+							   ‡ÀÁπ¥È«¬
+							</td>
+							<td align="center" class="borderTable">
+								∑∫∑«π
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+							   <input name="ctl00$MainContent$CheckBox44x" id="MainContent_CheckBox44x" type="checkbox"><label for="MainContent_CheckBox44x">«¡.∫°°.</label><!--tanandara-->
+							</td>
+							<td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$1_1" id="MainContent_CheckBox10x1" type="radio" value="CheckBox10x1">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$1_1" id="MainContent_CheckBox102x" type="radio" value="CheckBox102x">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable  checkbox">
+								<input name="ctl00$MainContent$CheckBox45x" id="MainContent_CheckBox45x" type="checkbox"><label for="MainContent_CheckBox45x">∫∂.∫°°.</label>
+							</td>
+							 <td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$2_1" id="MainContent_RadioButton10" type="radio" value="RadioButton10">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$2_1" id="MainContent_RadioButton11" type="radio" value="RadioButton11">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox46x" id="MainContent_CheckBox46x" type="checkbox"><label for="MainContent_CheckBox46x">®À.∫°°.</label>
+							</td>
+							 <td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$3_1" id="MainContent_RadioButton13" type="radio" value="RadioButton13">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$3_1" id="MainContent_RadioButton14" type="radio" value="RadioButton14">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox47x" id="MainContent_CheckBox47x" type="checkbox"><label for="MainContent_CheckBox47x">æº.æ°°.</label>
+							</td>
+							 <td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$4_1" id="MainContent_RadioButton16" type="radio" value="RadioButton16">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$4_1" id="MainContent_RadioButton17" type="radio" value="RadioButton17">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox48x" id="MainContent_CheckBox48x" type="checkbox"><label for="MainContent_CheckBox48x">«¢.æ°°.</label>
+							</td>
+							<td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$5_1" id="MainContent_RadioButton19" type="radio" value="RadioButton19">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$5_1" id="MainContent_RadioButton20" type="radio" value="RadioButton20">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox49x" id="MainContent_CheckBox49x" type="checkbox"><label for="MainContent_CheckBox49x">°∏.æ°°.</label>
+							</td>
+						   <td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$6_1" id="MainContent_RadioButton22" type="radio" value="RadioButton22">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$6_1" id="MainContent_RadioButton23" type="radio" value="RadioButton23">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox50x" id="MainContent_CheckBox50x" type="checkbox"><label for="MainContent_CheckBox50x">ª∂.ª°°.</label>
+							</td>
+							 <td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$7_1" id="MainContent_RadioButton25" type="radio" value="RadioButton25">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$7_1" id="MainContent_RadioButton26" type="radio" value="RadioButton26">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox51x" id="MainContent_CheckBox51x" type="checkbox"><label for="MainContent_CheckBox51x">ªπ.ª°°.</label>
+							</td>
+							<td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$8_1" id="MainContent_RadioButton28" type="radio" value="RadioButton28">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$8_1" id="MainContent_RadioButton29" type="radio" value="RadioButton29">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox52x" id="MainContent_CheckBox52x" type="checkbox"><label for="MainContent_CheckBox52x">√ .ª°°.</label>
+							</td>
+							 <td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$9_1" id="MainContent_RadioButton31" type="radio" value="RadioButton31">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$9_1" id="MainContent_RadioButton32" type="radio" value="RadioButton32">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox53x" id="MainContent_CheckBox53x" type="checkbox"><label for="MainContent_CheckBox53x">¢À.µ°°.</label>
+							</td>
+							 <td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$10_1" id="MainContent_RadioButton34" type="radio" value="RadioButton34">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$10_1" id="MainContent_RadioButton35" type="radio" value="RadioButton35">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox54x" id="MainContent_CheckBox54x" type="checkbox"><label for="MainContent_CheckBox54x">≈§.µ°°.</label>
+							</td>
+							<td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$11_1" id="MainContent_RadioButton37" type="radio" value="RadioButton37">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$11_1" id="MainContent_RadioButton38" type="radio" value="RadioButton38">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox55x" id="MainContent_CheckBox55x" type="checkbox"><label for="MainContent_CheckBox55x">  .µ°°.</label>
+							</td>
+							<td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$12_1" id="MainContent_RadioButton40" type="radio" value="RadioButton40">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$12_1" id="MainContent_RadioButton41" type="radio" value="RadioButton41">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="borderTable checkbox">
+								<input name="ctl00$MainContent$CheckBox56x" id="MainContent_CheckBox56x" type="checkbox"><label for="MainContent_CheckBox56x">§°.º°°.</label>
+							</td>
+							<td align="center" class="borderTable">
+								<input type="text" value="16/06/2015">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$13_1" id="MainContent_RadioButton43" type="radio" value="RadioButton43">
+							</td>
+							<td align="center" class="borderTable">
+								<input name="ctl00$MainContent$13_1" id="MainContent_RadioButton44" type="radio" value="RadioButton44">
+							</td>
+							<td align="center" class="borderTable">
+							   <input type="text" readonly="readonly">
+							</td>
+						</tr>
+					</tbody></table>
+			</div>
